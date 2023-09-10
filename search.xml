@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>/2023/09/10/hellow/</url>
+    <content><![CDATA[<p>你好啊</p>
+]]></content>
+  </entry>
+  <entry>
     <title>frist</title>
-    <url>/wei1793786487.github.io/2023/09/10/frist/</url>
+    <url>/2023/09/10/frist/</url>
     <content><![CDATA[<p>打造花里胡哨的终端</p>
 <h1 id="更新-package"><a href="#更新-package" class="headerlink" title="更新 package"></a>更新 package</h1><p>sudo apt update &amp;&amp; sudo apt upgrade</p>
 <h1 id="安装-zsh"><a href="#安装-zsh" class="headerlink" title="安装 zsh"></a>安装 zsh</h1><p>sudo apt install zsh -y</p>
@@ -22,11 +28,5 @@
       <tags>
         <tag>测试</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/wei1793786487.github.io/2023/09/10/hellow/</url>
-    <content><![CDATA[<p>你好啊</p>
-]]></content>
   </entry>
 </search>
