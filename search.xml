@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>frist</title>
+    <url>/wei1793786487.github.io/2023/09/10/frist/</url>
+    <content><![CDATA[<p>打造花里胡哨的终端</p>
+<h1 id="更新-package"><a href="#更新-package" class="headerlink" title="更新 package"></a>更新 package</h1><p>sudo apt update &amp;&amp; sudo apt upgrade</p>
+<h1 id="安装-zsh"><a href="#安装-zsh" class="headerlink" title="安装 zsh"></a>安装 zsh</h1><p>sudo apt install zsh -y</p>
+<h1 id="安装-oh-my-zsh"><a href="#安装-oh-my-zsh" class="headerlink" title="安装 oh-my-zsh"></a>安装 oh-my-zsh</h1><p>wget <a href="https://github.com/robbyrussell/oh-my-zsh/raw/">https://github.com/robbyrussell/oh-my-zsh/raw/</a></p>
+<p>；master&#x2F;tools&#x2F;install.sh -O - | zsh || true</p>
+<h1 id="安装命令补全和高亮插件"><a href="#安装命令补全和高亮插件" class="headerlink" title="安装命令补全和高亮插件"></a>安装命令补全和高亮插件</h1><p>git clone <a href="https://github.com/zsh-users/zsh-syntax-highlighting.git">https://github.com/zsh-users/zsh-syntax-highlighting.git</a> ~&#x2F;.oh-my-zsh&#x2F;plugins&#x2F;zsh-syntax-highlighting<br>git clone <a href="https://github.com/zsh-users/zsh-autosuggestions">https://github.com/zsh-users/zsh-autosuggestions</a> ~&#x2F;.oh-my-zsh&#x2F;plugins&#x2F;zsh-autosuggestions<br>sed -i’s&#x2F;plugins&#x3D;(git)&#x2F;plugins&#x3D;(git zsh-autosuggestions zsh-syntax-highlighting)&#x2F;g’ ~&#x2F;.zshrc</p>
+<h1 id="将-zsh-设置为默认的-shell"><a href="#将-zsh-设置为默认的-shell" class="headerlink" title="将 zsh 设置为默认的 shell"></a>将 zsh 设置为默认的 shell</h1><p>chsh -s &#x2F;bin&#x2F;zsh</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --depth=1 https://github.com/romkatv/powerlevel10k.git <span class="variable">$&#123;ZSH_CUSTOM:-<span class="variable">$HOME</span>/.oh-my-zsh/custom&#125;</span>/themes/powerlevel10k</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight rb"><table><tr><td class="code"><pre><span class="line">open ~<span class="regexp">/.zshrc</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">ZSH_THEME=&quot;powerlevel10k/powerlevel</span>10k<span class="string">&quot;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>vim  .zshrc </p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+</search>
