@@ -21,28 +21,35 @@
     var CONFIG = {"hostname":"wei1793786487.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="安装首先安装一下 tar yum install tar 使用脚本安装 trojan 1source &lt;(curl -sL https:&#x2F;&#x2F;git.io&#x2F;trojan-install)  输入证书   切换为 trojan-gotrojan 1 7 开启 udp 支持修改文件 1vim &#x2F;usr&#x2F;local&#x2F;etc&#x2F;trojan&#x2F;config.json  新增 websocked 支持 12">
+<meta property="og:type" content="article">
 <meta property="og:title" content="当你凝视bug的时候,bug也在凝视你">
-<meta property="og:url" content="https://wei1793786487.github.io/index.html">
+<meta property="og:url" content="https://wei1793786487.github.io/2023/09/13/%E6%A2%AF%E5%AD%90/index.html">
 <meta property="og:site_name" content="当你凝视bug的时候,bug也在凝视你">
+<meta property="og:description" content="安装首先安装一下 tar yum install tar 使用脚本安装 trojan 1source &lt;(curl -sL https:&#x2F;&#x2F;git.io&#x2F;trojan-install)  输入证书   切换为 trojan-gotrojan 1 7 开启 udp 支持修改文件 1vim &#x2F;usr&#x2F;local&#x2F;etc&#x2F;trojan&#x2F;config.json  新增 websocked 支持 12">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic-1259231187.cos.ap-beijing.myqcloud.com/image-20230913182329439.png">
+<meta property="og:image" content="https://pic-1259231187.cos.ap-beijing.myqcloud.com/image-20230913184344767.png">
+<meta property="article:published_time" content="2023-09-13T10:21:08.352Z">
+<meta property="article:modified_time" content="2023-09-13T11:28:09.261Z">
 <meta property="article:author" content="sunwei">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic-1259231187.cos.ap-beijing.myqcloud.com/image-20230913182329439.png">
 
-<link rel="canonical" href="https://wei1793786487.github.io/">
+<link rel="canonical" href="https://wei1793786487.github.io/2023/09/13/%E6%A2%AF%E5%AD%90/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>当你凝视bug的时候,bug也在凝视你</title>
+  <title> | 当你凝视bug的时候,bug也在凝视你</title>
   
 
 
@@ -178,9 +185,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -196,10 +204,9 @@
       <meta itemprop="name" content="当你凝视bug的时候,bug也在凝视你">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2023/09/13/%E6%A2%AF%E5%AD%90/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -219,6 +226,13 @@
               </span>
               <span class="post-meta-item-text">阅读次数：</span>
               <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
             </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
@@ -244,7 +258,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>首先安装一下 tar</p>
+        <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>首先安装一下 tar</p>
 <p><code>yum install tar</code></p>
 <p>使用脚本安装 trojan</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> &lt;(curl -sL https://git.io/trojan-install)</span><br></pre></td></tr></table></figure>
@@ -269,209 +283,60 @@
 <h3 id="安装-warp-加速"><a href="#安装-warp-加速" class="headerlink" title="安装 warp 加速"></a>安装 warp 加速</h3><p>用于访问 gpt </p>
 <p>bash &lt;(curl -fsSL git.io&#x2F;warp.sh) d</p>
 
-      
     </div>
 
     
     
-    
+    <script src="//sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+<script>
+  jinrishici.load((result) => {
+    let jrsc = document.getElementById('jrsc');
+    const data = result.data;
+    let author = data.origin.author;
+    let title = '《' + data.origin.title + '》';
+    let content = data.content.substr(0, data.content.length - 1);
+    let dynasty = data.origin.dynasty.substr(0, data.origin.dynasty.length - 1);
+    jrsc.innerText = content + ' @ ' + dynasty + '·' + author + title;
+  });
+</script>
+<div style="text-align: center"><span id="jrsc" >正在加载今日诗词....</span></div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>sunwei
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wei1793786487.github.io/2023/09/13/%E6%A2%AF%E5%AD%90/" title="">https://wei1793786487.github.io/2023/09/13/梯子/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wei1793786487.github.io/2023/09/10/hellow/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="sunwei">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="当你凝视bug的时候,bug也在凝视你">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/10/hellow/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-09-10 23:19:18 / 修改时间：23:19:33" itemprop="dateCreated datePublished" datetime="2023-09-10T23:19:18+08:00">2023-09-10</time>
-            </span>
-
-          
-            <span id="/2023/09/10/hellow/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>你好啊</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/09/10/hellow/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wei1793786487.github.io/2023/09/10/frist/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="sunwei">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="当你凝视bug的时候,bug也在凝视你">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/10/frist/" class="post-title-link" itemprop="url">frist</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-09-10 20:33:16" itemprop="dateCreated datePublished" datetime="2023-09-10T20:33:16+08:00">2023-09-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-11 14:31:52" itemprop="dateModified" datetime="2023-09-11T14:31:52+08:00">2023-09-11</time>
-              </span>
-
-          
-            <span id="/2023/09/10/frist/" class="post-meta-item leancloud_visitors" data-flag-title="frist" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>打造花里胡哨的终端</p>
-<h1 id="更新-package"><a href="#更新-package" class="headerlink" title="更新 package"></a>更新 package</h1><p>sudo apt update &amp;&amp; sudo apt upgrade</p>
-<h1 id="安装-zsh"><a href="#安装-zsh" class="headerlink" title="安装 zsh"></a>安装 zsh</h1><p>sudo apt install zsh -y</p>
-<h1 id="安装-oh-my-zsh"><a href="#安装-oh-my-zsh" class="headerlink" title="安装 oh-my-zsh"></a>安装 oh-my-zsh</h1><p>wget <a target="_blank" rel="noopener" href="https://github.com/robbyrussell/oh-my-zsh/raw/">https://github.com/robbyrussell/oh-my-zsh/raw/</a></p>
-<p>；master&#x2F;tools&#x2F;install.sh -O - | zsh || true</p>
-<h1 id="安装命令补全和高亮插件"><a href="#安装命令补全和高亮插件" class="headerlink" title="安装命令补全和高亮插件"></a>安装命令补全和高亮插件</h1><p>git clone <a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-syntax-highlighting.git">https://github.com/zsh-users/zsh-syntax-highlighting.git</a> ~&#x2F;.oh-my-zsh&#x2F;plugins&#x2F;zsh-syntax-highlighting<br>git clone <a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-autosuggestions">https://github.com/zsh-users/zsh-autosuggestions</a> ~&#x2F;.oh-my-zsh&#x2F;plugins&#x2F;zsh-autosuggestions<br>sed -i’s&#x2F;plugins&#x3D;(git)&#x2F;plugins&#x3D;(git zsh-autosuggestions zsh-syntax-highlighting)&#x2F;g’ ~&#x2F;.zshrc</p>
-<h1 id="将-zsh-设置为默认的-shell"><a href="#将-zsh-设置为默认的-shell" class="headerlink" title="将 zsh 设置为默认的 shell"></a>将 zsh 设置为默认的 shell</h1><p>chsh -s &#x2F;bin&#x2F;zsh</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --depth=1 https://github.com/romkatv/powerlevel10k.git <span class="variable">$&#123;ZSH_CUSTOM:-<span class="variable">$HOME</span>/.oh-my-zsh/custom&#125;</span>/themes/powerlevel10k</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight rb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">open ~<span class="regexp">/.zshrc</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">ZSH_THEME=&quot;powerlevel10k/powerlevel</span>10k<span class="string">&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>vim  .zshrc </p>
-<p><img src="https://pic-1259231187.cos.ap-beijing.myqcloud.com/image-20230910231819589.png" alt="image-20230910231819589"></p>
-<h3 id="编译安装-zsh-高版本"><a href="#编译安装-zsh-高版本" class="headerlink" title="编译安装 zsh 高版本"></a>编译安装 zsh 高版本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">wget https://jaist.dl.sourceforge.net/project/zsh/zsh/5.8/zsh-5.8.tar.xz</span><br><span class="line"></span><br><span class="line">tar xvf zsh-5.8.tar.xz</span><br><span class="line"></span><br><span class="line">yum install gcc perl-ExtUtils-MakeMaker</span><br><span class="line">yum install ncurses-devel</span><br><span class="line">cd zsh-5.8</span><br><span class="line">./configure </span><br><span class="line">make &amp;&amp; make install</span><br><span class="line">vim /etc/shells</span><br><span class="line"># 在最后一行加上：/usr/local/bin/zsh</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装-autojump"><a href="#安装-autojump" class="headerlink" title="安装 autojump"></a>安装 autojump</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone git://github.com/joelthelion/autojump.git</span><br><span class="line">./install.py</span><br><span class="line">vim ~/.zshrc</span><br><span class="line">[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] &amp;&amp; . ~/.autojump/etc/profile.d/autojump.sh</span><br></pre></td></tr></table></figure>
-
-<p>如果有权限不足的问题</p>
-<p>最笨的方法</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 找到所有的地址 </span><br><span class="line">find /-name autojump 2&gt;/dev/null</span><br><span class="line"># 全部给他们赋予权限 </span><br><span class="line">chmod +x 找到的地址 </span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -524,6 +389,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%87%E6%8D%A2%E4%B8%BA-trojan-go"><span class="nav-number">2.</span> <span class="nav-text">切换为 trojan-go</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%90%AF-udp-%E6%94%AF%E6%8C%81"><span class="nav-number">3.</span> <span class="nav-text">开启 udp 支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-warp-%E5%8A%A0%E9%80%9F"><span class="nav-number">4.</span> <span class="nav-text">安装 warp 加速</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

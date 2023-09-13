@@ -37,4 +37,33 @@
     <content><![CDATA[<p>你好啊</p>
 ]]></content>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2023/09/13/%E6%A2%AF%E5%AD%90/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>首先安装一下 tar</p>
+<p><code>yum install tar</code></p>
+<p>使用脚本安装 trojan</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">source</span> &lt;(curl -sL https://git.io/trojan-install)</span><br></pre></td></tr></table></figure>
+
+<p>输入证书</p>
+<img src="https://pic-1259231187.cos.ap-beijing.myqcloud.com/image-20230913182329439.png" alt="image-20230913182329439" style="zoom:200%;" />
+
+<h3 id="切换为-trojan-go"><a href="#切换为-trojan-go" class="headerlink" title="切换为 trojan-go"></a>切换为 trojan-go</h3><p>trojan</p>
+<p>1</p>
+<p>7</p>
+<h3 id="开启-udp-支持"><a href="#开启-udp-支持" class="headerlink" title="开启 udp 支持"></a>开启 udp 支持</h3><p>修改文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /usr/local/etc/trojan/config.json</span><br></pre></td></tr></table></figure>
+
+<p>新增 websocked 支持</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;websocket&quot;</span>: &#123;</span><br><span class="line">   <span class="string">&quot;enabled&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">   <span class="string">&quot;path&quot;</span>: <span class="string">&quot;/djdlanhdaio11hdnh&quot;</span>,</span><br><span class="line">   <span class="string">&quot;hostname&quot;</span>: <span class="string">&quot; 域名 & quot;</span>,</span><br><span class="line">   <span class="string">&quot;obfuscation_password&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">   <span class="string">&quot;double_tls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">   <span class="string">&quot;ssl&quot;</span>: &#123;</span><br><span class="line">     <span class="string">&quot;verify&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">     <span class="string">&quot;verify_hostname&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">     <span class="string">&quot;cert&quot;</span>: <span class="string">&quot;/root/.acme.sh/dasdasdasdas111.bigtail.monster_ecc/fullchain.cer&quot;</span>,</span><br><span class="line">     <span class="string">&quot;key&quot;</span>: <span class="string">&quot;/root/.acme.sh/dasdasdasdas111.bigtail.monster_ecc/dasdasdasdas111.bigtail.monster.key&quot;</span>,</span><br><span class="line">     <span class="string">&quot;key_password&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">     <span class="string">&quot;prefer_server_cipher&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">     <span class="string">&quot;sni&quot;</span>: <span class="string">&quot; 域名 & quot;</span>,</span><br><span class="line">     <span class="string">&quot;session_ticket&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">     <span class="string">&quot;reuse_session&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">     <span class="string">&quot;plain_http_response&quot;</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>修改服务端的 yaml 文件</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">proxies:</span></span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">hellow.bigtail.monster:36101</span>, <span class="attr">server:</span> <span class="string">hellow.bigtail.monster</span>, <span class="attr">port:</span> <span class="number">36101</span>, <span class="attr">type:</span> <span class="string">trojan</span>, <span class="attr">password:</span> <span class="string">zl5ZwEhS</span>, <span class="attr">sni:</span> <span class="string">hellow.bigtail.monster</span>, <span class="attr">network:</span> <span class="string">ws</span>, <span class="attr">udp:</span> <span class="literal">true</span>, <span class="attr">ws-opts:</span> &#123;<span class="attr">path:</span> <span class="string">/dasdnjsakdnjksandklsandkla</span>&#125;&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>启动 cloudflare 代理 记得开启 ssl 为严格模式</p>
+<p><img src="https://pic-1259231187.cos.ap-beijing.myqcloud.com/image-20230913184344767.png" alt="image-20230913184344767"></p>
+<h3 id="安装-warp-加速"><a href="#安装-warp-加速" class="headerlink" title="安装 warp 加速"></a>安装 warp 加速</h3><p>用于访问 gpt </p>
+<p>bash &lt;(curl -fsSL git.io&#x2F;warp.sh) d</p>
+]]></content>
+  </entry>
 </search>
